@@ -70,6 +70,7 @@ sapply(jira_data, function(x) sum(is.na(x)))
 # jiras_cat <- Filter(is.factor, jira_data)
 
 summary(jira_data$Age.Business.Days)
+       
 boxplot(jira_data$Age.Business.Days)
 
 
@@ -141,3 +142,5 @@ jira1 <- filter(jira_data, !is.na(Age.Business.Days))
 ggplot(jira1, aes(x=Age.Business.Days)) + geom_histogram(binwidth = 5, col="red", fill="light blue") + ggtitle("Tickets Age Distribution")
 
 ggplot(jira1, aes(x=Age.Business.Days)) + geom_histogram(binwidth = 5, col="red", fill="light blue") + ggtitle("Tickets Age Distribution")
+       
+## Code for Text Field Analysis to be added..
